@@ -1,0 +1,29 @@
+{
+  "name": "@steelbreeze/types",
+  "version": "1.0.0-rc.1",
+  "description": "Common TypeScript types used in development of other projects.",
+  "main": "./lib/node/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelbreeze/types.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "types"
+  ],
+  "author": "Mesmo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steelbreeze/types/issues"
+  },
+  "homepage": "https://github.com/steelbreeze/types#readme",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
