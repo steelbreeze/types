@@ -1,3 +1,5 @@
-export { Constructor, Consumer, Function, Operator, Predicate, Supplier } from './functions';
+// function prototypes
+export * from './functions';
 
-export { Pair } from './pair';
+// data structures
+export * from './pair';
