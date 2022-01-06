@@ -1,11 +1,8 @@
 /** Prototype of a class constructor. */
-export type Constructor<TResult> = new (...args: any[]) => TResult;
-
-/** A function taking one argument and returning a result. */
-export type Function<TArg, TResult> = (arg: TArg) => TResult;
+export type Constructor<TResult> = new (...args: Array<any>) => TResult;
 
 /** A function that takes a variable number of arguments and returns a result. */
-export type FunctionVA<TArgs, TResult> = (...args: Array<TArgs>) => TResult;
+export type Function<TArgs, TResult> = (...args: Array<TArgs>) => TResult;
 
 /** A function taking one argument and returning a boolean result. */
 export type Predicate<TArg> = Function<TArg, boolean>;
