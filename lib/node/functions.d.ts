@@ -2,6 +2,8 @@
 export declare type Constructor<TResult> = new (...args: any[]) => TResult;
 /** A function taking one argument and returning a result. */
 export declare type Function<TArg, TResult> = (arg: TArg) => TResult;
+/** A function that takes a variable number of arguments and returns a result. */
+export declare type FunctionVA<TArgs, TResult> = (...args: Array<TArgs>) => TResult;
 /** A function taking one argument and returning a boolean result. */
 export declare type Predicate<TArg> = Function<TArg, boolean>;
 /** A supplier function, one with no parameters that returns a result. */
