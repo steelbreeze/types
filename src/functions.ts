@@ -4,6 +4,9 @@ export type Constructor<TResult> = new (...args: Array<any>) => TResult;
 /** A function that takes a variable number of arguments and returns a result. */
 export type Function<TArgs, TResult> = (arg: TArgs) => TResult;
 
+/** A function used in an array-oriented callback. */
+export type CallbackFunction<TValue, TResult> = (value: TValue, index: number, source: Array<TValue>) => TResult;
+
 /** A function that takes a variable number of arguments and returns a result. */
 export type FunctionVA<TArgs, TResult> = (...args: Array<TArgs>) => TResult;
 
