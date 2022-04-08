@@ -3,7 +3,7 @@ export declare type Constructor<TResult> = new (...args: Array<any>) => TResult;
 /** A function that takes a variable number of arguments and returns a result. */
 export declare type Function<TArgs, TResult> = (arg: TArgs) => TResult;
 /** A function used in an array-oriented callback. */
-export declare type CallbackFunction<TValue, TResult> = (value: TValue, index: number, source: Array<TValue>) => TResult;
+export declare type CallbackFunction<TValue, TResult> = (value: TValue, index?: number, source?: Array<TValue>) => TResult;
 /** A function that takes a variable number of arguments and returns a result. */
 export declare type FunctionVA<TArgs, TResult> = (...args: Array<TArgs>) => TResult;
 /** A function taking one argument and returning a boolean result. */
