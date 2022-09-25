@@ -1,5 +1,5 @@
 /** A key/value pair. */
-export interface Pair<TValue = any, TKey = Exclude<keyof TValue, symbol>> {
+export interface Pair<TKey, TValue> {
 	/** The key. */
 	key: TKey;
 
